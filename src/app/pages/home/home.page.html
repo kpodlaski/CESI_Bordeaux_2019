@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-label > Login</ion-label>
+  <ion-input type="text" #name></ion-input>
+  <ion-label > Password</ion-label>
+  <ion-input type="password" #pass></ion-input>
+  <ion-button routerLink="/profile" routerDirection="forward">Start</ion-button>
+  <ion-button (click)="login({login:name.value, pass:pass.value})" >Loging</ion-button>
+</ion-content>
