@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>profilelist</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item *ngFor="let profile of _profiles" 
+  routerLink="/profile/{{profile.name}}/{{profile.pass}}" routerDirection="forward">
+            
+    <h2>{{profile.name}}</h2>
+    <h3>{{profile.desc}}</h3>
+  </ion-item>
+</ion-content>
