@@ -1,5 +1,5 @@
 package simple.aspectElements;
-//import simple.javaElements.*;
+import simple.javaElements.*;
 
 public aspect FirstAspect {
 

@@ -34,7 +34,7 @@ privileged  aspect DataBaseAccessRules {
 		if (p.getDepartment().getHeadPerson().equals(client))
 				return p;
 		
-		//3. User can see name,surname of pepole in its department
+		//3. User can see name,surname of pepole in his/her department
 		if (p.getDepartment().equals( client.getDepartment() ))
 		{
 			//Hiding unaviable data using temporary similar Person object
